@@ -18,7 +18,7 @@ C093299 홍민기 [PM]
 
 C289002 고영훈 [PL]
 
-C289003 김건우[PL]
+C289003 김건우 [PL]
 
 C284030 이다연
 
@@ -27,8 +27,6 @@ C289039 유승환
 C289045 이유림
 
 C289063 최유림
-
-<br>
 
 ### 개발도구
 
@@ -66,5 +64,7 @@ HTML, CSS, JavaScript, React, Node.js, Express, Oracle
 ### UI 설계
 
 ![UI_plan](./img/uiplan.png)
+
+<br>
 
 ### DB 설계
