@@ -39,7 +39,54 @@
 
 #footer{
     width: 100%;
-    height: 100px;
-    background-color: #888888;
+    border-top: 2px solid rgb(52, 52, 52);
     clear: left;
+
+}   
+
+#bot_menu{
+    width: 100%;
+    height: 20px;
+    position: relative;
+}
+
+#bot_menu ul{
+    margin-top: 15px;
+    list-style: none;
+    text-decoration: none;
+}
+
+#bot_menu ul li{
+    float: left;
+    padding: 5px 20px;
+    border-right: 1px solid #ddd
+    
+}
+
+#bot_menu ul li:last-child{
+    border-right: none;
+}
+
+#bot_menu ul li a, #bot_menu ul li a:visited{
+    font-size: 15px;
+    color: #666;
+    text-decoration: none;
+}
+
+#git_link{
+    position: absolute;
+    right: 0;
+}
+
+#git_link ul li{
+    border: none;
+    padding: 5px;
+}
+
+#team_inf{
+    clear: left;
+    margin-top: 25px;
+    margin-left: 20px;
+    font-size: 14px;
+    color: #aaa
 }
