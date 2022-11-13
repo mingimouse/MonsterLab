@@ -1,0 +1,52 @@
+#rec_recipe h2, #rec_tips h2, #rec_store h2{
+    font-size: xx-large;
+    font-weight: bolder;
+}
+
+.recipe_container, .tips_container, .store_container{
+    display : flex;
+    margin-bottom: 30px;
+}
+
+.recipe_container{
+    justify-content: space-between;
+}
+
+.tips_container{
+    flex-direction: column;
+    justify-content: space-around;
+    border : 4px solid rgb(52, 52, 52);
+    border-radius: 25px;
+}
+
+.store_container{
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: space-around;
+}
+
+.recipe_items, .tips_items, .store_items{
+    background-color: rgb(238, 155, 83);
+    text-align: center;
+    align-items: center;
+    font-size: large;
+    font-weight: bold;
+}
+
+.recipe_items{
+    flex : 1;
+    height: 240px;
+    margin : 5px;
+}
+
+.tips_items{
+    flex-basis: 100px;
+    margin: 15px;
+    vertical-align: middle;
+}
+
+.store_items{
+    width: 40%;
+    height: 200px;
+    margin : 5px;
+}

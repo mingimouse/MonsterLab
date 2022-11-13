@@ -10,6 +10,10 @@
     text-decoration: none;
 }
 
+#bot_menu ul li a:hover{
+    text-decoration: underline;
+}
+
 #bot_menu ul li{
     float: left;
     padding: 5px 20px;
@@ -17,7 +21,7 @@
     
 }
 
-#bot_menu ul li:last-child{
+#bot_menu ul li:last-child, #bot_menu ul li:first-child{
     border-right: none;
 }
 

@@ -34,12 +34,12 @@
 
 #recommend{
     width: 100%;
-    background-color: rgb(232, 232, 39);
+    background-color: rgb(148, 147, 150);
 }
 
 #footer{
     width: 100%;
     border-top: 2px solid rgb(52, 52, 52);
+    margin-top: 15px;
     clear: left;
-
 }
