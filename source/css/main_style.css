@@ -5,14 +5,14 @@
 }
 
 #container {
-    width: 1300px;
     margin: 30px auto;
 }
 
 #header{
     width: 100%; /*최종 min-width*/
     height: 130px;
-    background-color: #acacac;
+    background-color: white;
+    border-bottom:2px solid gray;
 }
 
 #banner{
@@ -20,6 +20,7 @@
     height: 500px;
     background-color: rgba(105, 226, 78, 0.567);
     margin: 0 auto;
+    margin-top: 25px;
 }
 #contents{
     width: 1000px;
@@ -39,7 +40,9 @@
 
 #footer{
     width: 100%;
-    border-top: 2px solid rgb(52, 52, 52);
+    border-top: 2px solid gray;
     margin-top: 15px;
+    padding-left: 430px;
+    padding-right: 450px;
     clear: left;
 }
