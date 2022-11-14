@@ -40,7 +40,8 @@
 
 #nav ul li{
     padding: 0px 15px;
-    font-weight: 900;
+    font-weight: bold;
+    font-size: x-large;
     /* font-family: Times, "Times New Roman", Georgia, serif; */
     float:left;
     border-right:1px solid black;

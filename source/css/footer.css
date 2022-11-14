@@ -27,7 +27,7 @@
 
 #bot_menu ul li a, #bot_menu ul li a:visited{
     font-size: 15px;
-    color: #666;
+    color: rgb(70, 70, 70);
     text-decoration: none;
 }
 
@@ -46,5 +46,5 @@
     margin-top: 25px;
     margin-left: 20px;
     font-size: 14px;
-    color: #aaa
+    color: rgb(122, 122, 122)
 }

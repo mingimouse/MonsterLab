@@ -13,6 +13,8 @@
     height: 130px;
     background-color: white;
     border-bottom:2px solid gray;
+    padding-left: 15%;
+    padding-right: 18%
 }
 
 #banner{
@@ -45,4 +47,5 @@
     padding-left: 430px;
     padding-right: 450px;
     clear: left;
+    background-color: rgb(245, 245, 245);
 }
