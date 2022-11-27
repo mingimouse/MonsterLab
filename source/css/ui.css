@@ -11,7 +11,7 @@
 #header{
     width: 100%; /*최종 min-width*/
     height: 130px;
-    background-color: white;
+    background-color: whit  e;
     border-bottom:2px solid gray;
     padding-left: 15%;
     padding-right: 18%
@@ -26,23 +26,23 @@
 }
 #contents{
     width: 1000px;
-    background-color: #e26d6d;
+    /* background-color: #e26d6d; */
     margin: 0 auto;
 }
 
 #ranking{
     width: 100%;
-    background-color: aqua;
+    /* background-color: aqua; */
 }
 
 #recommend{
     width: 100%;
-    background-color: rgb(148, 147, 150);
+    /* background-color: rgb(148, 147, 150); */
 }
 
 #footer{
     width: 100%;
-    border-top: 2px solid gray;
+    border-top: 1px solid gray;
     margin-top: 15px;
     padding-left: 430px;
     padding-right: 450px;

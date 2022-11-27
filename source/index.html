@@ -5,7 +5,7 @@
         <title>Monster Lab | 레시피 연구실</title>
 
         <!-- CSS -->
-        <link rel="stylesheet" href="css/main_style.css">
+        <link rel="stylesheet" href="css/ui.css">
         <link rel="stylesheet" href="css/header.css">
         <link rel="stylesheet" href="css/footer.css">
         <link rel="stylesheet" href="css/rec.css">
@@ -20,17 +20,19 @@
         <div id="container">
             <header id="header">
                 <div id="logo">
-                    <img src="favicon/monster_lab.jpg">
+                    <a href="./index.html" id="logo_img"><!-- 다시 홈화면으로 -->
+                        <img src="./img/투명 로고.png">
+                    </a>
                 </div>
                 <div id="service">
                     <ul id="ser_items">
                         <a href="#">
-                            <img src="favicon/검색.jpg">
+                            <img src="./img/투명 돋보기.png">
                         </a>
                     </ul>
                     <ul id="ser_items">
                         <a href="#">
-                            <img src="favicon/정보.jpg">
+                            <img src="./img/투명 사람.png">
                         </a>
                     </ul>
                 </div>
@@ -70,19 +72,22 @@
                     <div id="rec_tips">
                         <h2>Honey 팁</Honey></h2>
                         <div class="tips_container">
-                            <div class="tips_items">꿀팁1</div>
-                            <div class="tips_items">꿀팁2</div>
-                            <div class="tips_items">꿀팁3</div>
+                            <div class="tips_items">
+                                <li><img src="img/tip2.png" width="100%" ></li></div>
+                            <div class="tips_items">
+                                <li><img src="img/tip1.png" width="100%" ></li></div>
                         </div>
                     </div>
 
                     <div id="rec_store">
                         <h2>싸게 사게 </h2>
                         <div class="store_container">
-                            <div class="store_items">광고1</div>
-                            <div class="store_items">광고2</div>
-                            <div class="store_items">광고3</div>
-                            <div class="store_items">광고4</div>
+                            <div class="store_items">
+                                <a href="#"><img src="img/ad1.png" width="100%" height="100%"></a>
+                            </div>
+                            <div class="store_items">
+                                <a href="#"><img src="img/ad22.png" width="100%" height="100%"></a>
+                            </div>
                         </div>
                     </div>
 
@@ -91,9 +96,11 @@
             
             <footer id="footer">
                 <div id="bot_menu">
+                    <div id="bot_logo">
+                        <a href="#"><img src="img/투명 로고.png" width="125"height="25"></a>
+                    </div>
                     <ul>
                         <!-- 링크연결 -->
-                        <li><a href="#"><img src="favicon/android-chrome-192x192.png" width="25"height="25"></a></li>
                         <li><a href="#">회사소개</a></li>
                         <li><a href="#">제휴문의</a></li>
                         <li><a href="#">이용약관</a></li>
@@ -102,7 +109,8 @@
                     </ul>
                     <div id = "git_link">
                         <ul>
-                            <li><a href="https://github.com/mingimouse/MonsterLab" target="_blank"><img src="favicon/git_logo.png"width ="70" height="70"></a></li></la>
+                            <li><a href="https://github.com/mingimouse/MonsterLab" target="_blank">
+                                <img src="img/git_logo.png" width ="70" height="70"></a></li></la>
                         </ul>
                     </div>
                 </div>
