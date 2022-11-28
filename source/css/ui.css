@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+
+#container {
+    margin: 30px auto;
+}
+
+#header{
+    width: 100%; /*최종 min-width*/
+    height: 130px;
+    background-color: whit  e;
+    border-bottom:2px solid gray;
+    padding-left: 15%;
+    padding-right: 18%
+}
+
+#banner{
+    width: 1000px;
+    height: 500px;
+    background-color: rgba(105, 226, 78, 0.567);
+    margin: 0 auto;
+    margin-top: 25px;
+}
+#contents{
+    width: 1000px;
+    /* background-color: #e26d6d; */
+    margin: 0 auto;
+}
+
+#ranking{
+    width: 100%;
+    /* background-color: aqua; */
+}
+
+#recommend{
+    width: 100%;
+    /* background-color: rgb(148, 147, 150); */
+}
+
+#footer{
+    width: 100%;
+    border-top: 1px solid gray;
+    margin-top: 15px;
+    padding-left: 430px;
+    padding-right: 450px;
+    clear: left;
+    background-color: rgb(245, 245, 245);
+}
