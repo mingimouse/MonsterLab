@@ -26,6 +26,7 @@
     text-align: center;
     display: flex;
 }
+
 #banner_image{
     width: 100%;
     height: 100%;
@@ -33,11 +34,13 @@
     border-radius: 25px;
     overflow: hidden;
 }
+
 .ban_feature{
     margin-top: 250px;
     margin-left: 80px;
     margin-right: 80px;
 }
+
 #contents{
     width: 1200px;
     /* background-color: #e26d6d; */
