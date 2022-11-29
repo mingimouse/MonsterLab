@@ -1,7 +1,8 @@
-#rec_recipe h2, #rec_tips h2, #rec_store h2{
+#rec_recipe h2, #rec_tips h2, #rec_store h2, #ranking h2{
     font-size: xx-large;
     font-weight: bolder;
-    padding-top: 15px;
+    margin-top: 15px;
+    margin-bottom: 10px;
 }
 
 #rec_recipe, #rec_tips, #rec_store{
@@ -19,6 +20,7 @@
 }
 
 .tips_container{
+    height: 450px;
     flex-direction: column;
     justify-content: space-around;
     list-style-type: none;
