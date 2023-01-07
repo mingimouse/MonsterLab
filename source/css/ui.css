@@ -95,3 +95,13 @@
     width: 100%;
     /* background-color: rgb(148, 147, 150); */
 }
+
+#footer{
+    width: 100%;
+    border-top: 1px solid gray;
+    margin-top: 15px;
+    padding-left: 430px;
+    padding-right: 450px;
+    clear: left;
+    background-color: rgb(245, 245, 245);
+}
