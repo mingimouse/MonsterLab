@@ -1,182 +1,213 @@
 <!DOCTYPE html>
 <html lang="ko">
-    <head>
-        <title>Monster Lab | 레시피 연구실</title>
-        <!-- meta 태그-->
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="ID=edge">
-        <meta name="viewport" content="width=device-width", initial-scale="1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densitydpi=medium-dpi">
-        <meta name="title" property="og:title" content="[Monster Lab] 레시피 연구실">
-        <meta name="images" property="og:image" content="./img/ogimg.png">
-        <meta name="description" property="og:description" content="누구나 쉽게 요리사가 될 수 있습니다.">
-        <meta name="type" property="og:type" content="website">
-        <!-- JavaScript 불러오기 -->
-        <script type="text/javascript" src="./js/ui.js"></script>
-        <!-- CSS 불러오기 (나중에 ui.css로 합칠 예정) -->
-        <link rel="stylesheet" type="text/css" href="./css/ui.css">
-        <link rel="stylesheet" href="css/header.css">
-        <link rel="stylesheet" href="css/footer.css">
-        <link rel="stylesheet" href="css/rec.css">
-        <!-- favicon 설정 -->
-        <link rel="apple-touch-icon" sizes="180x180" href="./img/favicon/apple-touch-icon.png">
-        <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon/favicon-16x16.png">
-        <link rel="manifest" href="./site.webmanifest">
-    </head>
-    <body>
-        <div id="container">
-            <header id="header">
-                <div id="logo">
-                    <a href="./index.html" id="logo_img"><!-- 다시 홈화면으로 -->
-                        <img src="./img/투명 로고.png">
-                    </a>
-                </div>
-                <div id="service">
-                    <ul id="ser_items">
-                        <a href="#">
-                            <img src="./img/투명 돋보기.png">
-                        </a>
-                    </ul>
-                    <ul id="ser_items">
-                        <a href="#">
-                            <img src="./img/투명 사람.png">
-                        </a>
-                    </ul>
-                </div>
-                <div id="nav">
-                    <ul>
-                        <!-- 링크연결 -->
-                        <li><a href="#">스토어</a></li>
-                        <li><a href="#">랭킹</a></li>
-                        <li><a href="#">레시피</a></li>
-                        <li><a href="#">꿀팁</a></li>
-                        <li><a href="#">더보기</a></li>
-                    </ul>
-                </div>
-            </header>
-            
-            <div id="banner">
-                <div class="ban_feature">
-                    <img src="img/left.png" height="30%">
-                </div>
-                <div id="banner_image">
-                    <a href="#"><img src="img/ban.jpg" width="100%" height="100%"></a>
-                </div>
-                <div class="ban_feature">
-                    <img src="img/right.png" height="30%">
-                </div>
-            </div>
-            <div id="contents">
-                <div id="ranking">
-                    <h2>TOP 10</h2>
-                    <div id="ranking_container">
-                        <div class="rank_items">
-                           <img src="img/1.png" >
-                            <div class="rank_img">
-                                 <a href="#"><img src="img/git_logo.png"></a>
-                            </div>
-                            <a href="#"><span>음식이름</span></a>
-                        </div>
-                        <div class="rank_items">
-                            <img src="img/2.png" >
-                             <div class="rank_img">
-                                  <a href="#"><img src="img/git_logo.png"></a>
-                             </div>
-                             <a href="#"><span>음식이름</span></a>
-                         </div>
-                         <div class="rank_items">
-                            <img src="img/3.png" >
-                             <div class="rank_img">
-                                  <a href="#"><img src="img/git_logo.png"></a>
-                             </div>
-                             <a href="#"><span>음식이름</span></a>
-                         </div>
-                         <div class="rank_items">
-                            <p>4</p>
-                             <div class="rank_img">
-                                  <a href="#"><img src="img/git_logo.png"></a>
-                             </div>
-                             <a href="#"><span>음식이름</span></a>
-                         </div>
-                         <div class="rank_items">
-                            <p>5</p>
-                             <div class="rank_img">
-                                  <a href="#"><img src="img/git_logo.png"></a>
-                             </div>
-                             <a href="#"><span>음식이름</span></a>
-                         </div>
-                         <div class="rank_items">
-                            <p>6</p>
-                             <div class="rank_img">
-                                  <a href="#"><img src="img/git_logo.png"></a>
-                             </div>
-                             <a href="#"><span>음식이름</span></a>
-                         </div>
-                    </div>
-                </div>
-            
-                <div id="recommend">
-                    <div id="rec_recipe">
-                        <h2>오늘의 레시피</h2>
-                        <div class="recipe_container">
-                            <div class="recipe_items">레시피1</div>
-                            <div class="recipe_items">레시피2</div>
-                            <div class="recipe_items">레시피3</div>
-                            <div class="recipe_items">레시피4</div>
-                        </div>
-                    </div>
-                    <div id="rec_tips">
-                        <h2>Honey 팁</Honey></h2>
-                        <div class="tips_container">
-                            <div class="tips_items">
-                                <li><img src="img/tip2.png" width="70%" ></li></div>
-                            <div class="tips_items">
-                                <li><img src="img/tip1.png" width="70%" ></li></div>
-                        </div>
-                    </div>
 
-                    <div id="rec_store">
-                        <h2>싸게 사게 </h2>
-                        <div class="store_container">
-                            <div class="store_items">
-                                <a href="#"><img src="img/ad1.png" width="100%" height="100%"></a>
-                            </div>
-                            <div class="store_items">
-                                <a href="#"><img src="img/ad22.png" width="100%" height="100%"></a>
-                            </div>
-                        </div>
-                    </div>
+<head>
+    <title>Monster Lab | 레시피 연구실</title>
+    <!-- meta 태그-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ID=edge">
+    <meta name="viewport" content="width=device-width" ,
+        initial-scale="1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densitydpi=medium-dpi">
+    <meta name="title" property="og:title" content="[Monster Lab] 레시피 연구실">
+    <meta name="images" property="og:image" content="./img/ogimg.png">
+    <meta name="description" property="og:description" content="누구나 쉽게 요리사가 될 수 있습니다.">
+    <meta name="type" property="og:type" content="website">
+    <!-- JavaScript 불러오기 -->
+    <script type="text/javascript" src="./js/ui.js"></script>
+    <!-- CSS 불러오기 (나중에 ui.css로 합칠 예정) -->
+    <link rel="stylesheet" type="text/css" href="./css/ui.css">
+    <!-- <link rel="stylesheet" href="css/header.css"> -->
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/rec.css">
+    <!-- favicon 설정 -->
+    <link rel="apple-touch-icon" sizes="180x180" href="./img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="./site.webmanifest">
+</head>
 
-                </div>
-            </div>
-            
-            <footer id="footer">
-                <div id="bot_menu">
-                    <div id="bot_logo">
-                        <a href="#"><img src="img/투명 로고.png" width="125"height="25"></a>
-                    </div>
-                    <ul>
-                        <!-- 링크연결 -->
-                        <li><a href="#">회사소개</a></li>
-                        <li><a href="#">제휴문의</a></li>
-                        <li><a href="#">이용약관</a></li>
-                        <li><a href="#">개인정보처리방침</a></li>
-                        <li><a href="#">고객센터</a></li>
-                    </ul>
-                    <div id = "git_link">
-                        <ul>
-                            <li><a href="https://github.com/mingimouse/MonsterLab" target="_blank">
-                                <img src="img/git_logo.png" width ="70" height="70"></a></li></la>
-                        </ul>
-                    </div>
-                </div>
-                <div id="team_inf">
-                    <p>Monster Lab Team </p>
-                    <p>Members : 홍민기 이다연 고영훈 김건우 유승환 이유림 최유림</p>
-                    <p>Contact : 010-2883-1778 (24h)</p>
-                    <p>Mail : madlife0120@mail.hongik.ac.kr</p>
-                </div>
-            </footer>
+<body>
+    <header id="header">
+        <div id="header_logo">
+            <a href="./index.html"><img src="./img/logo.png" width="400px" height="70px"></a>
         </div>
-    </body>
+        <div id="header_service">
+            <ul>
+                <li id="header_search">
+                    <form>
+                        <input type="text" size="20">
+                        <button type="button"><img src="img/search.png" width="35px" height="38px"></button>
+                    </form>
+                </li>
+                <li id="header_login">
+                    <a href="#"><img src="./img/login.png" width="35px" height="38px"></a>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <nav id="nav">
+        <ul id="nav_menu">
+            <li><a href="#">스토어</a></li>
+            <li><a href="#">랭킹</a></li>
+            <li><a href="#">레시피</a></li>
+            <li><a href="#">꿀팁</a></li>
+            <li><a href="#">더보기</a></li>
+        </ul>
+    </nav>
+    <div id="container">
+
+        <div class="banner">
+            <input type="radio" name="banner_slide_radio" id="banner_slide01" checked>
+            <input type="radio" name="banner_slide_radio" id="banner_slide02">
+            <input type="radio" name="banner_slide_radio" id="banner_slide03">
+            <input type="radio" name="banner_slide_radio" id="banner_slide04">
+            <ul class="banner_list">
+                <li class="banner_item">
+                    <div>
+                        <label for="banner_slide04" class="left"></label>
+                        <label for="banner_slide02" class="right"></label>
+                        <a><img src="img/ban.jpg"></a>
+                    </div>
+                </li>
+                <li class="banner_item">
+                    <div>
+                        <label for="banner_slide01" class="left"></label>
+                        <label for="banner_slide03" class="right"></label>
+                        <a><img src="img/ban.jpg"></a>
+                    </div>
+                </li>
+                <li class="banner_item">
+                    <div>
+                        <label for="banner_slide02" class="left"></label>
+                        <label for="banner_slide04" class="right"></label>
+                        <a><img src="img/ban.jpg"></a>
+                    </div>
+                </li>
+                <li class="banner_item">
+                    <div>
+                        <label for="banner_slide03" class="left"></label>
+                        <label for="banner_slide01" class="right"></label>
+                        <a><img src="img/ban.jpg"></a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <!-- <div id="contents">
+            <div id="ranking">
+                <h2>TOP 10</h2>
+                <div id="ranking_container">
+                    <div class="rank_items">
+                        <img src="img/1.png">
+                        <div class="rank_img">
+                            <a href="#"><img src="img/git_logo.png"></a>
+                        </div>
+                        <a href="#"><span>음식이름</span></a>
+                    </div>
+                    <div class="rank_items">
+                        <img src="img/2.png">
+                        <div class="rank_img">
+                            <a href="#"><img src="img/git_logo.png"></a>
+                        </div>
+                        <a href="#"><span>음식이름</span></a>
+                    </div>
+                    <div class="rank_items">
+                        <img src="img/3.png">
+                        <div class="rank_img">
+                            <a href="#"><img src="img/git_logo.png"></a>
+                        </div>
+                        <a href="#"><span>음식이름</span></a>
+                    </div>
+                    <div class="rank_items">
+                        <p>4</p>
+                        <div class="rank_img">
+                            <a href="#"><img src="img/git_logo.png"></a>
+                        </div>
+                        <a href="#"><span>음식이름</span></a>
+                    </div>
+                    <div class="rank_items">
+                        <p>5</p>
+                        <div class="rank_img">
+                            <a href="#"><img src="img/git_logo.png"></a>
+                        </div>
+                        <a href="#"><span>음식이름</span></a>
+                    </div>
+                    <div class="rank_items">
+                        <p>6</p>
+                        <div class="rank_img">
+                            <a href="#"><img src="img/git_logo.png"></a>
+                        </div>
+                        <a href="#"><span>음식이름</span></a>
+                    </div>
+                </div>
+            </div>
+
+            <div id="recommend">
+                <div id="rec_recipe">
+                    <h2>오늘의 레시피</h2>
+                    <div class="recipe_container">
+                        <div class="recipe_items">레시피1</div>
+                        <div class="recipe_items">레시피2</div>
+                        <div class="recipe_items">레시피3</div>
+                        <div class="recipe_items">레시피4</div>
+                    </div>
+                </div>
+                <div id="rec_tips">
+                    <h2>Honey 팁</Honey>
+                    </h2>
+                    <div class="tips_container">
+                        <div class="tips_items">
+                            <li><img src="img/tip2.png" width="70%"></li>
+                        </div>
+                        <div class="tips_items">
+                            <li><img src="img/tip1.png" width="70%"></li>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="rec_store">
+                    <h2>싸게 사게 </h2>
+                    <div class="store_container">
+                        <div class="store_items">
+                            <a href="#"><img src="img/ad1.png" width="100%" height="100%"></a>
+                        </div>
+                        <div class="store_items">
+                            <a href="#"><img src="img/ad22.png" width="100%" height="100%"></a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div> -->
+
+        <!-- <footer id="footer">
+            <div id="bot_menu">
+                <div id="bot_logo">
+                    <a href="#"><img src="img/logo.png" width="125" height="25"></a>
+                </div>
+                <ul>
+                    <li><a href="#">회사소개</a></li>
+                    <li><a href="#">제휴문의</a></li>
+                    <li><a href="#">이용약관</a></li>
+                    <li><a href="#">개인정보처리방침</a></li>
+                    <li><a href="#">고객센터</a></li>
+                </ul>
+                <div id="git_link">
+                    <ul>
+                        <li><a href="https://github.com/mingimouse/MonsterLab" target="_blank">
+                                <img src="img/git_logo.png" width="70" height="70"></a></li>
+                        </la>
+                    </ul>
+                </div>
+            </div>
+            <div id="team_inf">
+                <p>Monster Lab Team </p>
+                <p>Members : 홍민기 이다연 고영훈 김건우 유승환 이유림 최유림</p>
+                <p>Contact : 010-2883-1778 (24h)</p>
+                <p>Mail : madlife0120@mail.hongik.ac.kr</p>
+            </div>
+        </footer>
+    </div> -->
+</body>
+
 </html>

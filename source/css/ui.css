@@ -3,43 +3,198 @@
     padding: 0;
     box-sizing:border-box;
 }
-
-#container {
-    margin: 30px auto;
+a, a:visited{
+    text-decoration: none;
 }
-
+ul, li {
+    list-style: none;
+}
+#container{ 
+    min-width: 1024px;
+    margin: 0px auto;
+    background-color: rgb(240, 240, 212);
+    border-top: 2px solid rgb(175, 173, 173);
+}
 #header{
-    width: 100%; /*최종 min-width*/
-    height: 130px;
-    /* background-color: white; */
-    border-bottom:2px solid gray;
-    padding-left: 15%;
-    padding-right: 18%
+    min-width: 1024px;
+    width: 100%;
+    height: 90px;
+    margin: 25px auto;
+    margin-bottom: 0px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
-
-#banner{
-    width: 1400px;
-    height: 500px;
-    /* background-color: rgba(105, 226, 78, 0.567); */
-    margin: 0 auto;
-    margin-top: 25px;
-    text-align: center;
+#header_logo{
+    height: 100%;
+}
+#header_service{
+    margin-right: 25px;
+}
+#header_service ul li{
+    float: left;
+}
+#header_search{
+    padding-right: 15px;
+}
+#header_search form{
     display: flex;
 }
-
-#banner_image{
-    width: 100%;
+#header_search form input {
+    width: 300px;
+    height: 38px;
+    border: 4px solid rgb(158, 33, 158);
+}
+#header_search form input:focus{
+    outline: none;
+}
+#header_search form button {
+    border: none;
+    background-color: transparent;
     height: 100%;
-    border : 1px solid rgb(185, 185, 185);
-    border-radius: 25px;
+    margin-left: 10px;
+}
+#header_search form button:hover, #header_login:hover{
+    background-color: lightgray;
+}
+#nav{
+    min-width: 1024px; 
+    width: 100%;
+    height: 42px;
+    padding-bottom: 12px;
+}
+#nav_menu{
+    width: 74%;
+    height: 100%;
+    margin: 0 auto;
+}
+#nav_menu li {
+    font-size: 20px;
+    font-weight: 900;
+    float: left;
+    border-right:1px solid black;
+}
+#nav_menu li a{
+    color: black;
+    padding: 0px 30px;
+}
+#nav_menu li:last-child{
+    border-right: none;
+}
+#nav_menu li a:hover{
+    color : rgb(241, 105, 105);
+    background-color: lightgray;
+}
+@media screen and (max-width: 1024px) {
+    #nav_menu{
+        width:auto;
+    }
+}
+
+.banner {
+    max-width: 1400px; 
+    width: 100%;
+    padding-top: 18px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+[name="banner_slide_radio"] {
+    display: none;
+}
+.banner img {
+    max-width: 100%;
+    width: 1400px;
+    padding: 0 20px;
+}
+.banner .banner_list{
+    white-space: nowrap;
+    font-size: 0;
     overflow: hidden;
 }
-
-.ban_feature{
-    margin-top: 250px;
-    margin-left: 80px;
-    margin-right: 80px;
+.banner .banner_item{
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    width: 100%;
+    transition: all .35s;
 }
+.banner .banner_item label{
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 20px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+label.left {
+    left:20px;
+    background-image: url('../img/left.png');
+    background-position: center center;
+    background-size: 50%;
+    background-repeat: no-repeat;
+}
+label.right {
+    right:20px;
+    background-image: url('../img/right.png');
+    background-position: center center;
+    background-size: 50%;
+    background-repeat: no-repeat;
+}
+[id="banner_slide01"]:checked ~ .banner_list .banner_item {transform: translateX(0); animation: banner_slide01 20s infinite;}
+[id="banner_slide02"]:checked ~ .banner_list .banner_item {transform: translateX(-100%); animation: banner_slide02 20s infinite;}
+[id="banner_slide03"]:checked ~ .banner_list .banner_item {transform: translateX(-200%); animation: banner_slide03 20s infinite;}
+[id="banner_slide04"]:checked ~ .banner_list .banner_item {transform: translateX(-300%); animation: banner_slide04 20s infinite;}
+@keyframes banner_slide01{
+    0% {left: 0%}
+    23%{left: 0%}
+    25%{left: -100%}
+    48%{left: -100%}
+    50%{left: -200%}
+    73%{left: -200%}
+    75%{left: -300%}
+    98%{left: -300%}
+    100%{left: 0%}
+}
+@keyframes banner_slide02{
+    0% {left: 0%}
+    23%{left: 0%}
+    25%{left: -100%}
+    48%{left: -100%}
+    50%{left: -200%}
+    73%{left: -200%}
+    75%{left: 100%}
+    98%{left: 100%}
+    100%{left: 0%}
+}
+@keyframes banner_slide03{
+    0% {left: 0%}
+    23%{left: 0%}
+    25%{left: -100%}
+    48%{left: -100%}
+    50%{left: 200%}
+    73%{left: 200%}
+    75%{left: 100%}
+    98%{left: 100%}
+    100%{left: 0%}
+}
+@keyframes banner_slide04{
+    0% {left: 0%}
+    23%{left: 0%}
+    25%{left: 300%}
+    48%{left: 300%}
+    50%{left: 200%}
+    73%{left: 200%}
+    75%{left: 100%}
+    98%{left: 100%}
+    100%{left: 0%}
+}
+
+
+
+
+
+
 
 #contents{
     width: 1200px;
